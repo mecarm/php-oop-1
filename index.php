@@ -15,11 +15,13 @@ $Movie1 = new Movie('Batman', 'Fantasy', 'https://upload.wikimedia.org/wikipedia
 $Movie2 = new Movie('Spiderman', 'Fantasy', 'https://fumettologica.it/wp-content/uploads/2021/11/spider-man-no-way-home-poster-1.jpeg');
 $Movie3 = new Movie('Benvenuti al sud', 'Comico', 'http://iicsanpietroburgo.esteri.it/iicmanager/img/sanpietroburgo/201401301314benvenuti_al_sud%20(1).jpg');
 
-var_dump($Movie1, $Movie2, $Movie3);
+// var_dump($Movie1, $Movie2, $Movie3);
 echo $Movie2->genereMovie();
 
 $MovieArray = [$Movie1, $Movie2, $Movie3];
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,10 +37,11 @@ $MovieArray = [$Movie1, $Movie2, $Movie3];
     <h1>Lista film</h1>
    
     <div>
-    <?php
-        foreach ($MovieArray as $card) {
-            $card->displayProjectCard();
-        } ?>
+        <?php
+            foreach ($MovieArray as $card) {
+                $card->displayProjectCard();
+            } 
+        ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
