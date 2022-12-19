@@ -15,7 +15,7 @@ class Movie{
         echo "Il film $this->title è di genere $this->type";
     }
     public function displayProjectCard() {
-        echo '<div class="card mt-4 w-25" >
+        echo '<div class="card mt-4 mx-3 w-25" >
                 <div class="card-body">
                     <h5 class="card-title">' . $this->title . '</h5>
                     <p class="card-text">' . $this->type . '</p>

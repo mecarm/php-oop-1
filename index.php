@@ -36,7 +36,7 @@ $MovieArray = [$Movie1, $Movie2, $Movie3];
 <body>
     <h1>Lista film</h1>
    
-    <div>
+    <div class="row justify-content-center">
         <?php
             foreach ($MovieArray as $card) {
                 $card->displayProjectCard();
